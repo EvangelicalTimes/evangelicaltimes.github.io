@@ -1,6 +1,6 @@
 .photo {
   text-align:center;
-  background-color: #FFFFFF;
+  background-color: #fcfce9;
   font-size: 9pt;
   font-family: 'Tinos', serif;
   padding: 1mm;
@@ -19,9 +19,20 @@ font-size:10pt;
 margin-bottom:1px;
 line-height:1px;
 }
+.enhanced {
+  text-align:center;
+  background-color: #fcfce9;
+  font-size: 9pt;
+  font-family: 'Tinos', serif;
+  padding: 1mm;
+  line-height:16pt;
+  border: solid black .25mm;
+  border-radius:4px;
+  width:72mm;
+}
 .standard {
   text-align:left;
-  background-color: #FFFFFF;
+  background-color: #fcfce9;
   font-size: 9pt;
   font-family: 'Tinos', serif;
   padding: 1mm;
