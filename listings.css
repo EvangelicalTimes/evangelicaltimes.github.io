@@ -1,41 +1,103 @@
-.photo {
-  text-align:center;
-  background-color: #fcfce9;
-  font-size: 9pt;
-  font-family: 'Tinos', serif;
-  padding: 1mm;
-  line-height:16pt;
-  border: solid black .25mm;
-  border-radius:4px;
-  width:72mm;
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
 }
-img {
-width:96%;
-padding-bottom:2mm;
-}
-h3 {
-font-weight:600;
-font-size:10pt;
-margin-bottom:1px;
-line-height:1px;
-}
-.enhanced {
-  text-align:center;
-  background-color: #fcfce9;
-  font-size: 9pt;
-  font-family: 'Tinos', serif;
-  padding: 1mm;
-  line-height:16pt;
-  border: solid black .25mm;
-  border-radius:4px;
-  width:72mm;
-}
+
+/* Standard listing style */
 .standard {
-  text-align:left;
-  background-color: #fcfce9;
-  font-size: 9pt;
-  font-family: 'Tinos', serif;
-  padding: 1mm;
-  line-height:11pt;
-  width:72mm;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Enhanced listing style */
+.enhanced {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border: 2px solid #d0d0d0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Photo listing style */
+.photo {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #d0d0d0;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Church photo styling */
+.church-photo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* Typography */
+.standard > *:first-child,
+.enhanced > *:first-child,
+.photo > *:first-child {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #2c5282;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Make website and email clickable */
+.standard > *:last-child,
+.enhanced > *:last-child,
+.photo > *:last-child {
+    word-break: break-word;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .standard, .enhanced, .photo {
+        padding: 12px;
+        margin: 10px auto;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        padding: 0;
+    }
+
+    .standard, .enhanced, .photo {
+        border: none;
+        box-shadow: none;
+        margin: 0 auto;
+    }
+
+    .church-photo {
+        max-width: 300px;
+    }
 }
