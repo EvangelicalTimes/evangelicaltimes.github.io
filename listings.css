@@ -44,6 +44,7 @@ body {
 
 /* Church photo styling - Updated for specific requirements */
 .church-photo {
+    transform: scale(0.7);
     width: 100%;
     height: 300px;
     object-fit: cover;
