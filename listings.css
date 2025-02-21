@@ -45,10 +45,9 @@ body {
 /* Church photo styling - Updated for specific requirements */
 .church-photo {
     width: 100%;
-    height: 260px;
+    height: 300px;
     object-fit: contain;
-    object-position: center;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 10px auto;
     border-radius: 4px;
     display: block;
 }
@@ -56,7 +55,7 @@ body {
 /* Container for the photo to maintain aspect ratio */
 .photo img.church-photo {
     max-width: 100%;
-    max-height: 260px;
+    max-height: 300px;
 }
 
 /* Typography for standard listing */
